@@ -401,7 +401,7 @@
                 <p class="section-desc reveal" style="text-align:center;">Email us your photos and questions — it's free, and there's no obligation. We'll take it from there.</p>
                 <div class="contact-info reveal">
                     <div class="contact-item">
-                        <a href="#" onclick="openEmail('contact');return false;">nwuptospec@gmail.com</a>
+                        <a href="#" onclick="openEmail('contact');return false;"><span class="__cf_email__" data-cfemail="adc3dad8ddd9c2deddc8ceedcac0ccc4c183cec2c0">[email&#160;protected]</span></a>
                         <small>Email</small>
                     </div>
                     <div class="contact-item">
@@ -422,7 +422,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Email function - builds mailto dynamically to avoid CloudFlare/GitHub obfuscation
         function openEmail(type) {
             var user = 'nwuptospec';
@@ -482,18 +482,4 @@
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        reveals.forEach(function(el) { revealObserver.observe(el); });
-    </script>
-</body>
-</html>
-echo "# consulting" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/nwuptospec/consulting.git
-git push -u origin main
+                    revealObserver.unobserve(entry.target)
